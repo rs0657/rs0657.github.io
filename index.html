@@ -1,4 +1,3 @@
-<!-----META SECTION----->
 <!DOCTYPE html>
 <html>
 
@@ -8,14 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-  
     /*COMMON CSS SECTION*/
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      -outline: 0;
-      font-family: sans-serif,'Roboto',arial;
+      outline: 0;
+      font-family: 'Roboto', Arial, sans-serif;
     }
 
     html,
@@ -28,7 +26,7 @@
 
     .container {
       width: 1100px;
-      margin: 0px auto;
+      margin: 0 auto;
       display: table;
     }
 
@@ -75,7 +73,7 @@
     /*Main BANNER*/
     .width-50 {
       float: left;
-      width: 14.88%;
+      width: 50%;
     }
 
     .banner-section {
@@ -87,7 +85,7 @@
     .banner-section h1 {
       font-size: 48px;
       margin-top: 10px;
-      font-weight: bolder;
+      font-weight: bold;
     }
 
     .banner-section h2 {
@@ -116,19 +114,13 @@
     .main-panel img {
       margin-top: 10%;
       width: 100%;
-      margin-left: 10%;
     }
 
     /*ABOUT US SECTION*/
     .main-section {
       width: 100%;
       float: left;
-      padding: 110px 0px 110px 0px;
-    }
-
-    .width-100 {
-      width: 100%;
-      float: left;
+      padding: 110px 0;
     }
 
     .mt-20 {
@@ -146,7 +138,7 @@
 
     .about-img {
       width: 100%;
-      padding: 0px 50px;
+      padding: 0 50px;
       margin-top: 20px;
     }
 
@@ -164,13 +156,14 @@
 
     table {
       width: 100%;
+      margin-top: 20px;
     }
 
     table th,
     table td {
       font-size: 16px;
       text-align: left;
-      padding: 5px 0px;
+      padding: 5px 0;
     }
 
     /*SKILL SECTION*/
@@ -202,18 +195,13 @@
       margin-left: 100px;
       margin-bottom: 20px;
       width: 150px;
-      ;
       height: 150px;
-      ;
       border-radius: 50%;
-
       place-items: center;
       display: grid;
-
       --pgPercentage: var(--value);
       background: radial-gradient(closest-side, black 80%, transparent 0 99.9%, black 0),
         conic-gradient(#ffbf35 calc(var(--pgPercentage) * 1%), #ffe6af 0);
-
     }
 
     /*EXPERIENCE SECTION*/
@@ -222,10 +210,9 @@
     }
 
     .edu-exp {
-      padding: 10px 0px;
       width: 48%;
-      margin: 1%;
       float: left;
+      margin: 1%;
       padding-left: 10px;
     }
 
@@ -244,7 +231,6 @@
     }
 
     .experience-content h2 {
-
       font-weight: 600;
       margin-bottom: 5px;
       font-size: 20px;
@@ -260,57 +246,61 @@
     .experience-content p {
       font-size: 15px;
     }
-    /*PORTFOLIO SECTION*/
-.gallery {
-	width: 100%;
-	float: left;
-	margin-top: 30px;
-}
-.gallery img {
-	height: auto;
-	width: 95%;
-	margin-bottom: 20px;
-}
-/*FOOTER SECTION*/
-.footer {
-	background-color: #202020;
-	padding: 30px 0px 40px 0px;
-	width: 100%;
-	float: left;
-}
-.footer-sect {
-	color: #b3b3b3;
-}
-.footer-sect a {
-	color: #b3b3b3;
-	margin-left: 10px;
-	text-decoration: none;
-	font-size: 18px;
-	text-align: center;
-}
-.social-icon a i {
-	width: 50px;
-	height: 50px;
-	border: 1px solid #cdcdcd;
-	line-height: 50px;
-	font-size: 20px;
-	border-radius: 50%;
-}
 
+    /*PORTFOLIO SECTION*/
+    .gallery {
+      width: 100%;
+      float: left;
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .gallery img {
+      width: 32%;
+      margin-bottom: 20px;
+    }
+
+    /*FOOTER SECTION*/
+    .footer {
+      background-color: #202020;
+      padding: 30px 0;
+      width: 100%;
+      float: left;
+    }
+
+    .footer-sect {
+      color: #b3b3b3;
+    }
+
+    .footer-sect a {
+      color: #b3b3b3;
+      margin-left: 10px;
+      text-decoration: none;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .social-icon a i {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #cdcdcd;
+      line-height: 50px;
+      font-size: 20px;
+      border-radius: 50%;
+    }
   </style>
 </head>
 
 <body>
-  <!-----MENU SECTION------>
+  <!-- MENU SECTION -->
   <div class="main-panel">
     <div class="container">
-      <div class="width-33 logo">Port <span class="span-col">folio</span>
-      </div>
+      <div class="width-33 logo">Port <span class="span-col">folio</span></div>
       <div class="width-66">
         <nav>
-          <a href="#">
-            <span class="span-col">Home</span>
-          </a>
+          <a href="#"><span class="span-col">Home</span></a>
           <a href="#aboutus">About me</a>
           <a href="#edu">Education</a>
           <a href="#skills">My Skills</a>
@@ -318,23 +308,16 @@
         </nav>
       </div>
     </div>
-    <!------MAIN BANNERR------>
-    <div class="container ">
+    <!-- MAIN BANNER -->
+    <div class="container">
       <div class="width-50">
         <div class="banner-section">
           <span class="span-col">Welcome To Raghuram's Space</span>
-          <h1>S.Raghuram <span class="span-col"></span>
-          </h1>
-          <h2>- I'm a Second Year Student Persuing My Engineering.</h2>
-          <a href="https://www.linkedin.com/in/raghuram-srikanth-0088bb286/">
-            <i class="fa fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/raghuramsrikanth/">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href="https://github.com/rs0657">
-            <i class="fa fa-github"></i>
-          </a>
+          <h1>S.Raghuram <span class="span-col"></span></h1>
+          <h2>- I'm a Second Year Student Pursuing My Engineering.</h2>
+          <a href="https://www.linkedin.com/in/raghuram-srikanth-0088bb286/"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/raghuramsrikanth/"><i class="fa fa-instagram"></i></a>
+          <a href="https://github.com/rs0657"><i class="fa fa-github"></i></a>
         </div>
       </div>
       <div class="width-50">
@@ -342,7 +325,7 @@
       </div>
     </div>
   </div>
-  <!------ABOUT US SECTION------>
+  <!-- ABOUT US SECTION -->
   <div class="main-section bg-lightgrey">
     <div class="container">
       <div class="width-50">
@@ -352,7 +335,7 @@
         <div class="about-us" id="aboutus">
           <h2 class="heading-text">About Me</h2>
           <h3>I am available for taking part in projects and Internships </h3>
-          <p>Hi, I am S.Raghuram, From Chennai.Currently doing by Bachelors in Computer Science and Engineering from SRM
+          <p>Hi, I am S.Raghuram, From Chennai. Currently doing my Bachelors in Computer Science and Engineering from SRM
             University-Kattankulathur.</p>
           <div class="width-50 mt-20">
             <table cellspacing="8" cellpadding="8">
@@ -360,22 +343,23 @@
                 <th>Name:</th>
                 <td>S.Raghuram</td>
               </tr>
-            <tr>
+              <tr>
                 <th>Email:</th>
-                <td><p>rs0657@srmist.edu.in
-                  raghuramsrikanth1104@gmail.com</p></td>
+                <td>
+                  <p>rs0657@srmist.edu.in<br>raghuramsrikanth1104@gmail.com</p>
+                </td>
               </tr>
               <tr>
                 <th>Birthday:</th>
-                <td> 06 November,2004</td>
+                <td>06 November, 2004</td>
               </tr>
               <tr>
                 <th>Study:</th>
-                <td> SRM University</td>
+                <td>SRM University</td>
               </tr>
             </table>
           </div>
-          <div class="width-60 mt-20">
+          <div class="width-50 mt-20">
             <table cellspacing="8" cellpadding="8">
               <tr>
                 <th>Phone:</th>
@@ -383,11 +367,11 @@
               </tr>
               <tr>
                 <th>City:</th>
-                <td>Chennai,TamilNadu,India</td>
+                <td>Chennai, Tamil Nadu, India</td>
               </tr>
               <tr>
                 <th>Freelancer:</th>
-                <td> Available</td>
+                <td>Available</td>
               </tr>
               <tr>
                 <th>Website:</th>
@@ -399,21 +383,21 @@
       </div>
     </div>
   </div>
-  <!------SKILL SECTION------>
+  <!-- SKILL SECTION -->
   <div class="main-section">
     <div class="container">
       <h2 class="heading-text" id="skills">My Skills</h2>
       <div class="width-50">
         <div class="skill">
           <b>HTML</b>
-          <span>75%%</span>
+          <span>75%</span>
           <div>
             <span style="width:95%"></span>
           </div>
         </div>
         <div class="skill">
           <b>CSS</b>
-          <span>75%%</span>
+          <span>75%</span>
           <div>
             <span style="width:91%"></span>
           </div>
@@ -439,144 +423,149 @@
             <span style="width:79%"></span>
           </div>
         </div>
-        <div class="skill">
-          <b>PYTHON</b>
-          <span>70%</span>
-          <div>
-            <span style="width:79%"></span>
-          </div>
-        </div>
       </div>
       <div class="width-50">
-        <div class="width-50">
-          <div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--value:100">
-            TEAMWORK
+        <div class="skill">
+          <b>Python</b>
+          <span>85%</span>
+          <div>
+            <span style="width:85%"></span>
           </div>
         </div>
-        <div class="width-50">
-          <div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--value:100">
-            PROBLEM<br>
-            SOLVING</div>
+        <div class="skill">
+          <b>JavaScript</b>
+          <span>80%</span>
+          <div>
+            <span style="width:80%"></span>
+          </div>
         </div>
-        <div class="width-50">
-          <div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="--value:100">
-            <div>
-                LEADERSHIP
-            </div>
+        <div class="skill">
+          <b>SQL</b>
+          <span>70%</span>
+          <div>
+            <span style="width:70%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <b>React.js</b>
+          <span>75%</span>
+          <div>
+            <span style="width:75%"></span>
           </div>
         </div>
       </div>
-      <!------EXPERIENCE SECTION------>
-      <div class="main-section bg-lightgrey">
+  
+<div class="main-section bg-lightgrey">
+    <div class="container">
+      <div class="edu-exp">
+        <h2 class="heading-text" id="edu">Education</h2>
+        <div class="experience-list">
+          <div class="experience-content">
+            <h2>NATIONAL PUBLIC SCHOOL</h2>
+            <h3>2010-2017</h3>
+            <p>1st to 7th Grade</p>
+          </div>
+        </div>
+        <div class="experience-list">
+          <div class="experience-content">
+            <h2>AMM SCHOOL</h2>
+            <h3>2018-2022</h3>
+            <p>8th to 12th Grade</p>
+          </div>
+        </div>
+        <div class="experience-list">
+          <div class="experience-content">
+            <h2>SRM University</h2>
+            <h3>2022-2026</h3>
+            <p>Bachelor in Computer Science Engineering(CORE)</p>
+          </div>
+        </div>
+      </div>
+      <div class="edu-exp">
+        <h2 class="heading-text">ACADEMIC SCORES</h2>
+        <div class="experience-list">
+          <div class="experience-content">
+            <h2>CLASS 10</h2>
+            <h3>72%</h3>
+          </div>
+        </div>
+        <div class="experience-list">
+          <div class="experience-content">
+            <h2>CLASS 12</h2>
+            <h3>73%</h3>
+          </div>
+        </div>
+        <div class="experience-list">
+          <div class="experience-content">
+            <h2>SEM-1 GPA</h2>
+            <h3>8.5</h3>
+          </div>
+        </div>
+        <div class="experience-list">
+          <div class="experience-content">
+            <h2>SEM-2 GPA</h2>
+            <h3>8.64</h3>
+          </div>
+        </div>
+      <div class="experience-list">
+          <div class="experience-content">
+            <h2>SEM-3 GPA</h2>
+            <h3>9.65</h3>
+          </div>
+        </div>
+        <div class="experience-list">
+            <div class="experience-content">
+                <h2>CGPA</h2>
+                <h3>8.95</h3>
+            </div>
+        </div>
+    </div>
+    <div class="main-section">
         <div class="container">
-          <div class="edu-exp">
-            <h2 class="heading-text" id="edu">Education</h2>
-            <div class="experience-list">
-              <div class="experience-content">
-                <h2>NATIONAL PUBLIC SCHOOL</h2>
-                <h3>2010-2017</h3>
-                <p>1st to 7th Grade</p>
-              </div>
+          <h2 class="heading-text" id="certificate">My Certifications</h2>
+          <div class="gallery">
+            <div class="width-25">
+              <img src="./UIUX CERIFICATE.jpeg">
             </div>
-            <div class="experience-list">
-              <div class="experience-content">
-                <h2>AMM SCHOOL</h2>
-                <h3>2018-2022</h3>
-                <p>8th to 12th Grade</p>
-              </div>
+            <div class="width-25">
+              <img src="./python certificate.jpeg">
             </div>
-            <div class="experience-list">
-              <div class="experience-content">
-                <h2>SRM University</h2>
-                <h3>2022-2026</h3>
-                <p>Bachelor in Computer Science Engineering(CORE)</p>
-              </div>
+            <div class="width-25">
+              <img src="./hackthon.jpeg">
+            </div>
+            <div class="width-25">
+              <img src="./aws.jpg">
+            </div>
+            <div class="width-25">
+              <img src="./cisco.jpg">
+            </div>
+            <div class="width-25">
+              <img src="./aicte.jpg">
+            </div>
+            <div class="width-25">
+              <img src="./coursera.jpg">
             </div>
           </div>
-          <div class="edu-exp">
-            <h2 class="heading-text">ACADEMIC SCORES</h2>
-            <div class="experience-list">
-              <div class="experience-content">
-                <h2>CLASS 10</h2>
-                <h3>72%</h3>
-              </div>
-            </div>
-            <div class="experience-list">
-              <div class="experience-content">
-                <h2>CLASS 12</h2>
-                <h3>73%</h3>
-              </div>
-            </div>
-            <div class="experience-list">
-              <div class="experience-content">
-                <h2>SEM-1 GPA</h2>
-                <h3>8.5</h3>
-              </div>
-            </div>
-            <div class="experience-list">
-              <div class="experience-content">
-                <h2>SEM-2 GPA</h2>
-                <h3>8.64</h3>
-              </div>
-            </div>
-		  <div class="experience-list">
-              <div class="experience-content">
-                <h2>SEM-3 GPA</h2>
-                <h3>9.65</h3>
-              </div>
-            </div>
-            <div class="experience-list">
-                <div class="experience-content">
-                    <h2>CGPA</h2>
-                    <h3>8.95</h3>
-                </div>
-            </div>
         </div>
-        <!------PORTFOLIO SECTION------>
-<div class="main-section">
-  <div class="container">
-    <h2 class="heading-text" id="certificate">My Certifications</h2>
-    <div class="gallery">
-      <div class="width-14.28">
-        <img src="./UIUX CERIFICATE.jpeg">
       </div>
-      <div class="width-14.28" style="width: 32%">
-        <img src="./python certificate.jpeg">
-      </div>
-      <div class="width-14.28" style="width: 32%">
-        <img src="./hackthon.jpeg">
-      </div>
-	    <div class="width-14.28"  style="width: 32%">
-        <img src="./aws.jpg">
-      </div>
-	    <div class="width-14.28"  style="width: 32%">
-        <img src="./cisco.jpg">
-      </div>
-	    <div class="width-14.28"  style="width: 32%">
-        <img src="./aicte.jpg">
-      </div>
-	    <div class="width-14.28"  style="width: 32%">
-        <img src="./coursera.jpg">
-      </div>
+      
+<!-- FOOTER SECTION -->
+<div class="footer">
+<div class="container">
+  <div class="footer-sect">
+    <a href="#">Terms of Service</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="footer-sect">
+    <div class="social-icon">
+      <a href="https://www.instagram.com/raghuramsrikanth/"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/raghuram-srikanth-0088bb286/"><i class="fa fa-linkedin"></i></a>
     </div>
   </div>
 </div>
-<!------FOOTER SECTION------>
-<div class="footer">
-  <div class="container">
-    <div class="footer-sect social-icon width-50">
-      <a href="#">
-        <i class="fa fa-facebook"></i>
-      </a>
-      <a href="#">
-        <i class="fa fa-twitter"></i>
-      </a>
-      <a href="#">
-        <i class="fa fa-linkedin"></i>
-      </a>
-      <a href="#">
-        <i class="fa fa-instagram"></i>
-      </a>
-    </div>
-   </div>
-    </div>
+</div>
+</body>
+
+</html>
+
